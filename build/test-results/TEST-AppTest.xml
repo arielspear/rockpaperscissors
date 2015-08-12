@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2015-08-12T18:28:34" hostname="epicodus-108.local" time="0.003">
+<testsuite name="AppTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2015-08-12T21:13:48" hostname="epicodus-108.local" time="0.002">
   <properties/>
   <testcase name="checkWinner_scissorsBeatsPaper_true" classname="AppTest" time="0.002">
     <failure message="java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;

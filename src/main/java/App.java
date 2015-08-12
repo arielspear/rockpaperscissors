@@ -21,6 +21,20 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
+
+        get("/detector", (request, response) -> {
+          Map<String, Object> model = new HashMap<String, Object>();
+          model.put("template", "templates/detector.vtl");
+
+          //word variable userInputtedWord
+          // grab which word is entered in the form
+          // String userInputtedWord = request.queryParams("word");
+          // Integer wordScore = getWordScore(userInputtedWord);
+          // model.put("wordScore", wordScore);
+          // model.put("word", userInputtedWord);
+          return new ModelAndView(model, layout);
+          }, new VelocityTemplateEngine());
+
     Console myConsole = System.console();
     Random randomGenerator = new Random();
     // Random randomNum = new Random();
@@ -40,17 +54,17 @@ public class App {
     //random number between 0 and 2
     int computerRandom = randomGenerator.nextInt(3);
     //array of moves: move name, beaten by
-    String computerChoice = computerStringOptions[computerRandom];
+    String computerInput = computerStringOptions[computerRandom];
     String [][] moves = {
       { "rock", "paper", },
       { "scissors", "rock", },
       { "paper", "scissors", },
     };
-    System.out.println(computerChoice);
+    System.out.println(computerInput);
 
     }
 
-  public Boolean checkWinner(String input1, String input2) {
+  public Boolean checkWinner(String userInput, String computerInput) {
 
     return false;
 

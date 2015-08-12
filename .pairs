@@ -1,0 +1,8 @@
+# .pairs - configuration for 'git pair'
+pairs:
+  # <initials>: <Firstname> <Lastname>[; <email-id>]
+  hh: Haley Harrison
+  as: Ariel Spear
+email_addresses:
+  hh: harrisonhaley@gmail.com
+  as: simpleredfox@gmail.com
